@@ -1,0 +1,17 @@
+
+
+.li{
+    list-style: none;
+    font-weight: bold;
+    height: 50px;
+    /* width: 50%; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    width: fit-content;
+    /* margin: 10px 0px; */
+    padding: 0px 30px;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
