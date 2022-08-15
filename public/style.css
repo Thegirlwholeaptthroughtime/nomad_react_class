@@ -1,4 +1,20 @@
 
+*{
+    margin: 0; 
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    font-style: none;
+    color: #000;
+    text-decoration:none;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #ccc;
+}
 
 .li{
     list-style: none;
@@ -14,4 +30,48 @@
     padding: 0px 30px;
     display: inline-block;
     margin: 0 10px 10px 0;
+}
+
+
+.loading{
+    width: 100%;
+    background: #000;
+    height: 100vh;
+    margin: 0;padding: 0;
+    transition: 0.5s;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+
+.container{
+    width: 90%;
+    margin: 50px auto;
+}
+.containerTitle{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+
+.title{
+    margin-bottom: 10px;
+}
+.summary{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.genres li{
+    font-weight: bold;
 }

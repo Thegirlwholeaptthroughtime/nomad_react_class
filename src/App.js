@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route  } from "react-router-dom";
 import Coin from "./jsx/Coin";
+import Movie from "./jsx/Movie";
 import Todo from "./jsx/Todo";
+import Detail from "./routes/Detail";
+import Home from "./routes/Home";
 
 
 
@@ -9,17 +12,16 @@ import Todo from "./jsx/Todo";
 
 function App() {
  
-
-  
   return (
-    <> 
     <BrowserRouter>
       <Routes>
-        <Route path="/todo" element={<Todo />} />
-        <Route path="/coin" element={<Coin />} />
+
+
+        <Route path="/" element={<Home/>}/>
+        <Route path="/movie/:id" element={<Detail/>}/>
+   
       </Routes>
-    </BrowserRouter> 
-    </>
+    </BrowserRouter>
   );
 }
 
