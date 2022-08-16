@@ -22,7 +22,9 @@ function Home() {
     return ( 
         <>
         {loading ? 
-          (<h1 className="loading">loading</h1>) :
+          (<div className="loading">
+              <h1>loading</h1>
+           </div>) :
           (
 
             <div className="container">
@@ -34,7 +36,6 @@ function Home() {
                 id={movie.id}
                 coverImg={movie.medium_cover_image}
                 title={movie.title}
-                summary={movie.summary}
                 genres={movie.genres}
               />
               )}
