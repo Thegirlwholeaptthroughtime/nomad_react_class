@@ -5,6 +5,10 @@
     list-style: none;
 }
 
+body{
+    background: #ccc;
+}
+
 a{
     font-style: none;
     color: #000;
