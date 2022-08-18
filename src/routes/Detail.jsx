@@ -29,9 +29,14 @@ function Detail() {
         (
       
           <div className='container'>
-          <img src={movieDetail.medium_cover_image} alt="" />
+  
+     
+          <img src={movieDetail.large_cover_image} alt="" />
             <h1>{movieDetail.title}</h1>
-            <h1>{movieDetail.description_full}</h1>
+          
+            <p>Rate : {movieDetail.rating}</p>
+            <p>{movieDetail.year}</p>
+            <p>{movieDetail.description_full}</p>
           </div>
        
         )

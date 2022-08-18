@@ -31,7 +31,7 @@ function Home() {
             <h1 className="containerTitle">The Movies!</h1>
               <div className="wrap">
               {movies.map((movie)=>
-               <Movie 
+               <Movie   
                 key={movie.id}
                 id={movie.id}
                 coverImg={movie.medium_cover_image}
