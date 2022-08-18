@@ -1,26 +1,25 @@
-
-*{
-    margin: 0; 
+* {
+    margin: 0;
     padding: 0;
     list-style: none;
 }
 
-body{
+body {
     background: #ccc;
 }
 
-a{
+a {
     font-style: none;
     color: #000;
-    text-decoration:none;
+    text-decoration: none;
     transition: 0.3s;
 }
 
-a:hover{
+a:hover {
     color: #ccc;
 }
 
-.li{
+.li {
     list-style: none;
     font-weight: bold;
     height: 50px;
@@ -39,51 +38,55 @@ a:hover{
 
 
 
-.box{
+.box {
     border: 2px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 30px;
     width: 25%;
 }
-.box img{
+
+.box img {
     width: 100%;
 }
 
 
-.container{
+.container {
     width: 90%;
     margin: 50px auto;
 }
-.containerTitle{
+
+.containerTitle {
     text-align: center;
     margin-bottom: 50px;
     font-size: 60px;
 }
 
-.wrap{
+.wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly
 }
 
-.title{
+.title {
     margin-bottom: 10px;
 }
-.summary{
+
+.summary {
     font-size: 14px;
     margin-bottom: 10px;
 }
 
-.genres li{
+.genres li {
     font-weight: bold;
 }
 
-.loading{
+.loading {
     width: 100%;
     background: #000;
     height: 100vh;
-    margin: 0;padding: 0;
+    margin: 0;
+    padding: 0;
     transition: 0.5s;
     color: #fff;
     font-weight: bold;
@@ -95,10 +98,11 @@ a:hover{
     animation: loading2 1s infinite alternate; */
 }
 
-.loading h1{
+.loading h1 {
     position: relative;
 }
-.loading h1:after{
+
+.loading h1:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -108,7 +112,7 @@ a:hover{
     animation: loading 1s infinite alternate;
 }
 
-.loading h1:before{
+.loading h1:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -121,18 +125,20 @@ a:hover{
 
 @keyframes loading {
     0% {
-     width: 0;
-    }   
-    100% {
-     width: 100%;
+        width: 0;
     }
-  }
 
-  @keyframes loading2 {
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes loading2 {
     0% {
-     top: -100vh;
-    }   
+        top: -100vh;
+    }
+
     100% {
         top: 0vh;
     }
-  }
+}
